@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>继承性</title>
+  <style>
+    .box {
+      font-size: 30px;
+      line-height: 1.5;
+      font-weight: bold;
+      font-family: '宋体';
+      text-align: center;
+      /*text-decoration:文本修饰属性
+      underline-下划线，overline-上划线，
+      hone-不做修饰，line-through-删除线
+      */
+      text-decoration: underline;
+      font-style: italic;
+      color: dodgerblue;
+    }
+
+    /* ul继承了 box的所有样式,只需定义自己的样式（去除原点)*/
+    .box ul {
+      list-style: none;
+    }
+
+    /*看效果，思考为什么该元素重新定义了上划线后，还有蓝色的下划线?*/
+    .content {
+      font-size: 20px;
+      text-align: left;
+      text-decoration: overline;
+      color: orchid;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul>
+      <li>列表项</li>
+      <li>列表项</li>
+      <li>列表项</li>
+    </ul>
+    <p class="content">字体属性的继承性</p>
+  </div>
+</body>
+
+</html>

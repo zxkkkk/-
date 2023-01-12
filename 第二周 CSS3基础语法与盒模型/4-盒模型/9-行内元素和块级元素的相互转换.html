@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9-行内元素和块级元素的相互转换</title>
+  <style>
+    .enter {
+      /*转为块级元素*/
+      display: block;
+      background-color: dodgerblue;
+      width: 200px;
+      height: 60px;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      text-decoration: none;
+    }
+
+    span {
+      /*转为行内块*/
+      display: inline-block;
+      background-color: orchid;
+      padding: 8px 20px;
+      margin-top: 30px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="" class="enter">点击进入</a>
+  <div>
+    <span>我是span</span>
+    <span>我是span</span>
+    <span>我是span</span>
+  </div>
+</body>
+
+</html>

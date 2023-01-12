@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>属性选择器</title>
+  <style>
+    img {
+      width: 220px;
+    }
+
+    /* 
+    [alt] 有这个属性
+    [alt = "北京故宫"] 精准匹配
+    [alt ^= "abc"] 开头匹配
+    [alt $= "abc"] 结尾匹配
+    [alt *= "abc"] 任意位置匹配
+    [alt |= "abc"] abc-开头
+    [alt ~= "abc"] abc为空格分开的独立部分
+    */
+    img[alt|="参赛作品"] {
+      border: 3px solid deepskyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="https://img.sz1001.net/uploadfile/2022/0523/20220523112818473.jpg" alt="参赛作品-夜阑">
+  <img src="https://olimg.3dmgame.com/uploads/images/raiders/2022/0602/1654157443609.jpg" alt=夜阑">
+</body>
+
+</html>
