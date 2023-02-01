@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>变量</title>
+</head>
+
+<body>
+  <script>
+    var a = 5;
+    console.log(a);//输出5
+
+    console.log('a ');//输出字符a
+
+    var b = 66.66;
+    console.log(b);//输出66.66
+
+    var s = '慕课网';
+    console.log(s);//输出字符串:慕课网
+    var d = new Date();
+    console.log(d); //输出 Tue Jan 10 2023 22:44:31 GNT+0800（中国标准时间)
+    //错误的变量名
+    //var 2m = 1l;
+    //var a#3 = 1l;
+
+    //正确的变量名
+    var $xyz_123$ = 888;
+    console.log($xyz_123$);//输出888
+
+    var n;
+    console.log(n);//输出undefined ，因为变量n未赋值
+
+    a;
+    console.log(a);//输出5，因为a在上面赋过值为5
+
+  </script>
+</body>
+
+</html>

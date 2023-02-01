@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>变量声明提升</title>
+</head>
+
+<body>
+  <script>
+    //此时 a 还没定义,但是不会报错,只是输出 undefined , JS 中 undefined 也是一种数据类型
+    //这就称为变量声明提升,就是后面有声明就行,我可以提前使用,比如给第一个 a 赋值后,即可正确输出,尽管它还没有用var定义
+    a;
+    console.log(a);
+    var a = 123;
+    console.log(a);
+  </script>
+</body>
+
+</html>
