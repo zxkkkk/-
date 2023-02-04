@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12-更适合使用while的场景</title>
+</head>
+
+<body>
+  <script>
+    //天的序号
+    var n = 1;
+    //累加器
+    var sum = 0;
+
+    while (sum < 500) {
+      sum += n;
+      n++;
+    }
+    //一定要注意这里有一个'出一错误'。
+    console.log(n - 1);
+
+  </script>
+</body>
+
+</html>
