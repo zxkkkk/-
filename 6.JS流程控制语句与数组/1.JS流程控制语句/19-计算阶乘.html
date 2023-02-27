@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算阶乘</title>
+</head>
+
+<body>
+  <script>
+    //请用户输入n
+    var n = Number(prompt('请输入数字:'));
+
+    //累乘器 从1开始
+    var result = 1;
+
+    //倒着遍历,计算阶乘
+    for (var i = n; i >= 1; i--) {
+      result *= i;
+    }
+
+    //显示结果
+    alert(result);
+  </script>
+</body>
+
+</html>

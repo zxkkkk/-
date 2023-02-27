@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>水仙花数方法1</title>
+</head>
+
+<body>
+  <script>
+    var n = Number(prompt('请输入一个三位数'));
+
+    if (!isNaN(n) && 100 <= n && n <= 999) {
+
+      var a = Math.floor(n / 100);
+
+      var b = Math.floor(n / 10) % 10;
+
+      var c = n % 10;
+
+      if (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3) == n) {
+        alert('这个数字是水仙花数');
+      } else {
+        alert('这个数不是水仙花数');
+      }
+
+    } else {
+      alert('你输入的数字是不合法的');
+    }
+  </script>
+</body>
+
+</html>
